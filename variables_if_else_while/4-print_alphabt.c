@@ -9,8 +9,8 @@ int main(void)
 {
 	char abc;
 	
-	e = 'e';
-	q = 'q';
+	int e = 'e';
+	int q = 'q';
 
 	for (abc = 'a'; abc <= 'z'; abc++)
 		if (abc != e && abc != q)
