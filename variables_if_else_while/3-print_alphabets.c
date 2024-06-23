@@ -2,7 +2,6 @@
 
 /**
  * main - prints all letters in the alphaber order
- *  
  *  Return: returns 0
  */
 
