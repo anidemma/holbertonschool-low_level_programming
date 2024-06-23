@@ -9,7 +9,7 @@ int main(void)
 	char abc;
 
 	for (num = 0; num < 10; num++)
-		printf("%d", num);
+		putchar((num/100) + '0');
 	for (abc = 'a'; abc <= 'f'; abc++)
 		putchar(abc);
 	putchar("\n");
