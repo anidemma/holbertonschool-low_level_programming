@@ -12,6 +12,6 @@ int main(void)
 		putchar((num/100) + '0');
 	for (abc = 'a'; abc <= 'f'; abc++)
 		putchar(abc);
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
