@@ -1,27 +1,26 @@
 #include "main.h"
 /**
- * print_diagonal - function
- * @n: integer
+ *  * print_diagonal - func
+ *   * @n: variable
  */
 void print_diagonal(int n)
 {
-	int y;
+	int a, b;
 
-	int x = 0;
-
-	while (n > 0)
+	if (n > 0)
+	{
+		for (a = 0; a < n; a++)
 		{
-			y = x;
-				while (y > 0)
-				{
-					_putchar(' ');
-					y--;
-				}
-		_putchar('\\');
-		_putchar('\n');
-		x++;
-		n--;
-		}
-	if (x < 1)
-		_putchar('\n');
+			for (b = 0; b < a; b++)
+				_putchar(' ');
+
+			_putchar('\\');
+
+			if (a == (n - 1))
+				continue;
+
+			_putchar('\n');
+			}
+	}
+	_putchar('\n');
 }
