@@ -24,7 +24,7 @@ void print_triangle(int size)
 				w = 0;
 
 				_putchar ('\n');
-i		}
+		}
 	}
 	else
 	_putchar('\n');
