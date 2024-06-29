@@ -18,13 +18,13 @@ void print_triangle(int size)
 						_putchar(' ');
 					else
 						_putchar('#');
-						w++;
+					w++;
 				}
 				l++;
 				w = 0;
 
 				_putchar ('\n');
-		}
+i		}
 	}
 	else
 	_putchar('\n');
