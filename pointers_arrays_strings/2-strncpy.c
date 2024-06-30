@@ -1,20 +1,20 @@
 #include "main.h"
 /**
- * _strcmp - function
- * @s1: variable
- * @s2: variable
- * Return: 0
+ * _strncpy - func
+ * @dest: destination
+ * @src: soource
+ * @n: size of sring
+ * Return: copied string
  */
-int _strcmp(char *s1, char *s2)
+char *_strncpy(char *dest, char *src, int n)
 {
-	int a = 0;
+	int i;
 
-	while (s1[a] != '\0' || s2[a] != '\0')
-	{
-		if (s1[a] != s2[a])
-			return (s1[a] - s2[a]);
-		a++;
-	}
+	for (i = 0; i < n && src[i] != '\0'; i++)
+		dest[i] = src[i];
 
-	return (0);
+	for (; n > i; i++)
+		dest[i] = '\0';
+
+	return (dest);
 }
