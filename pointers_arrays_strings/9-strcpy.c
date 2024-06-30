@@ -6,15 +6,17 @@
  * @src: pointer
  * Return: dest.
 */
-char *_strcpy(char *dest, const char *src)
+char *_strcpy(char *dest, char *src)
 {
-	int index = 0;
+	int len = 0, a;
 
-	while (src[index])
-	{
-		dest[index] = src[index];
-		index++;
-	}
+	while (src[len] != '\0')
+		len++;
+
+	for (a = 0; a < len; a++)
+		dest[a] = src[a];
+
+	dest[a] = '\0';
 
 	return (dest);
 }
