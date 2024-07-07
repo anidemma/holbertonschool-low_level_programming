@@ -2,6 +2,7 @@
 /**
  * _strlen_recursion - function
  * @s:variable
+ * Return: function
  */
 int _strlen_recursion(char *s)
 {
