@@ -1,27 +1,34 @@
 #include "main.h"
 /**
- * _strstr - func
+ * _strstr - function
  * @haystack: variable
  * @needle: variable
- * Return: haystack or end of the str
-*/
+ * Return: haystack, end of the string otherwise
+ */
 char *_strstr(char *haystack, char *needle)
 {
-	char *startn = needle, *starth = haystack;
+	int i;
 
-	while (*haystack)
+	if (*needle != 0)
 	{
-		starth = haystack;
-		needle = startn;
-		while (*haystack == *needle)
+		while (*haystack++)
 		{
-			haystack++;
-			needle++;
-		}
+			i = 0;
 
-		if (*needle == '\0')
-			return (haystack);
-		haystack = starth + 1;
+			if (haystack[i] == needle[i])
+			{
+				do {
+					if (needle[i + 1] == '\0')
+						return (haystack);
+					i++;
+				}
+				while (haystack[i] == needle[i])
+					;
+			}
+		}
 	}
-	return (0);
+	else
+		return (haystack);
+
+	return ('\0');
 }
