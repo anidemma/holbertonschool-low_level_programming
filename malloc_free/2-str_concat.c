@@ -1,4 +1,4 @@
-#include"main.h"
+#include "main.h"
 /**
  * str_concat - function
  * @s1: variable
