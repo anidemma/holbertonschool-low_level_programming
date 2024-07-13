@@ -1,38 +1,36 @@
 #include "main.h"
-#include <stdio.h>
-#include <stddef.h>
-#include <stdlib.h>
 /**
- * str_concat - function
- * @s1: variable
- * @s2: variable
- * Return: NULL on failure
+ * str_concat - fun
+ * @s1: first str
+ * @s2: second str
+ * Return: sum of 2 str
  */
 char *str_concat(char *s1, char *s2)
 {
-	int i;
-	int a = 0;
-	int b = 0;
-	char *cat;
+	int i = 0, j = 0, x = 0;
+	char *a;
 
 	if (s1 == NULL)
-		return ("");
+		i = 0;
+	else
+		while (*(s1 + i) != '\0')
+			i++;
 	if (s2 == NULL)
-		return ("");
-	for (i = 0; s1[i] || s2[i]; i++)
-		b++;
+		j = 0;
+	else
+		while (*(s2 + j) != '\0')
+			j++;
 
-	cat = malloc(sizeof(char) * b);
+	a = malloc(1 + (i + j) * sizeof(char));
 
-	if (cat == NULL)
+	if (a == NULL)
 		return (NULL);
 
-	for (i = 0; s1[i]; i++)
-		cat[a++] = s1[i];
+	while (x != i)
+		a[x] = s1[x], x++;
+	while (x != (i + j))
+		a[x] = s2[x - i], x++;
 
-	for (i = 0; s2[i]; i++)
-		cat[a++] = s2[i];
-
-	cat[a] = 0;
-	return (cat);
+	a[x] = 0;
+	return (a);
 }
