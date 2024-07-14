@@ -1,9 +1,9 @@
 #include "dog.h"
 #include <stdlib.h>
 /**
- *  * free_dog - func
- *   * @d: var
- *    */
+ * free_dog - func
+ * @d: var
+*/
 void free_dog(dog_t *d)
 {
 	if (d != NULL)
