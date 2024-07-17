@@ -7,8 +7,9 @@
  * Return: a + b
 */
 int op_add(int a, int b)
+{
 	return (a + b);
-
+}
 /**
  * op_sub - function
  * @a:var1
@@ -16,8 +17,9 @@ int op_add(int a, int b)
  * Return: a - b
 */
 int op_sub(int a, int b)
+{
 	return (a - b);
-
+}
 /**
  * op_mul - function
  * @a:var1
@@ -25,8 +27,9 @@ int op_sub(int a, int b)
  * Return: a * b
 */
 int op_mul(int a, int b)
+{
 	return (a * b);
-
+}
 /**
  * op_div - function
  * @a:var1
@@ -34,8 +37,9 @@ int op_mul(int a, int b)
  * Return: a / b
 */
 int op_div(int a, int b)
+{
 	return (a / b);
-
+}
 /**
  * op_mod - function
  * @a:var1
@@ -43,4 +47,6 @@ int op_div(int a, int b)
  * Return: a % b
 */
 int op_mod(int a, int b)
+{
 	return (a % b);
+}
