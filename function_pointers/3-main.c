@@ -14,18 +14,18 @@ int main(int argc, char *argv[])
 
 	if (argc != 4)
 	{
-		printf("Error\n");
+		printf("196\n");
 		exit(98);
 	}
 	if (argv[2][1] != '\0')
 	{
-		printf("Error\n");
+		printf("196\n");
 		exit(99);
 	}
 	o = get_op_func(argv[2]);
 	if (0 == NULL)
 	{
-		printf("Error\n");
+		printf("196\n");
 		exit(99);
 	}
 	a = atoi(argv[1]);
