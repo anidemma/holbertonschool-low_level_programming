@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(100);
 	}
-	printf("%d\n", op(a, b));
+	printf("%d\n", get_on_func(op)(a, b));
 
 	return (0);
 }
