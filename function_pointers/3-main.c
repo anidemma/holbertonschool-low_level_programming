@@ -10,6 +10,7 @@
 int main(int argc, char *argv[])
 {
 	int a, b;
+	char x;
 	int (*o)(int, int);
 
 	if (argc != 4)
@@ -24,8 +25,9 @@ int main(int argc, char *argv[])
 	}
 
 	a = atoi(argv[1]), b = atoi(argv[3]), o = get_op_func(argv[2]);
+	x = o;
 
-	if (argv[2] == '/' || o == '%')
+	if (o == '/' || o == '%')
 	{
 		printf("Error\n");
 		exit(100);
