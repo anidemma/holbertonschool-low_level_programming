@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 	o = get_op_func(argv[2]);
-	if (0 == NULL)
+	if (o == NULL)
 	{
 		printf("98\n");
 		exit(99);
