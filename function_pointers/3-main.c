@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 	if (argc != 4)
 	{
 		printf("196\n");
-		exit(98);
+		exit(99);
 	}
 	if (argv[2][1] != '\0')
 	{
