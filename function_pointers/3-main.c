@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 	o = get_op_func(argv[2]);
 	if (0 == NULL)
 	{
-		printf("196\n");
+		printf("98\n");
 		exit(99);
 	}
 	a = atoi(argv[1]);
