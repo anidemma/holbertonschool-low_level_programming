@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	}
 	if (argv[2][1] != '\0')
 	{
-		printf("196\n");
+		printf("98\n");
 		exit(99);
 	}
 	o = get_op_func(argv[2]);
