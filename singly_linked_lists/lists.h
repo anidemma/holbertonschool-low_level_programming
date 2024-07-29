@@ -5,6 +5,12 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <limits.h>
+/**
+ * struct list_s - srtucture
+ * @str: data
+ * @len: length
+ * @next: pointer to the next node
+ */
 typedef struct list_s
 {
 	char *str;
