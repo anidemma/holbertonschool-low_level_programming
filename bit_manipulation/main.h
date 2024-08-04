@@ -3,15 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd>
-/**
- * _putchar - func
- * @c: char
- */
-int _putchar(char c)
-{
-	write(1, &c, 1);
-}
+int _putchar(char c);
 unsigned int binary_to_uint(const char *b);
 void print_binary(unsigned long int n);
 int get_bit(unsigned long int n, unsigned int index);
